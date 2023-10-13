@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div class="container">
+    <label for="zipCode">Enter Zip Code:</label>
+    <input type="text" id="zipCode" placeholder="Enter zip code">
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div id="weatherInfo"></div>
+    <div id="forecastInfo"></div>
+    <div id="weatherMap"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
